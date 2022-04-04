@@ -28,6 +28,7 @@ function App() {
         </div>
 
         <div className="btn-group">
+          
           {/* Tasto di Ripristino */}
           <button className="btn btn-reset" onClick={reloadAllItem}>
             {" "}
