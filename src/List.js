@@ -1,4 +1,5 @@
 import React from "react";
+import {RiDeleteBack2Fill} from "react-icons/ri"; // Importo icons-react
 
 // Attraverso i props, passo i dati del nostro array di oggetti al componente List. Iteriamo i nostri dati con il metodo map.
 const List = (props) => {
@@ -23,7 +24,10 @@ const Person = ({ id, nome, stato, img, removeItem }) => {
       <div className="person-info">
         <div className="person-action">
           <h4>{nome}</h4>
-          <button className="btn">Remove</button> {/* Tasto Rimuovi */}
+          <button className="btn">
+            {/* Componente = Icona importata dalla librearia di React */}
+            <RiDeleteBack2Fill className="icon" />
+          </button>
         </div>
         <p>{stato}</p>
       </div>
